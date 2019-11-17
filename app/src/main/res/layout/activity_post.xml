@@ -7,14 +7,37 @@
     tools:context=".PostActivity">
 
     <TextView
+        android:id="@+id/tops"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        android:layout_margin="50dp"
+        android:text="제목:"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+       />
+
+    <TextView
+        android:id="@+id/totops"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        android:text="내용:"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/post_content"
+        android:gravity="center"
+        android:layout_marginTop="50dp"/>
+
+
+    <TextView
         android:id="@+id/post_title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:padding="8dp"
         android:textSize="30sp"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tops"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <TextView
         android:id="@+id/post_content"
@@ -22,8 +45,11 @@
         android:layout_height="wrap_content"
         android:padding="8dp"
         android:textSize="15sp"
-        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintLeft_toRightOf="@id/totops"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/post_title" />
+        app:layout_constraintTop_toBottomOf="@id/post_title"
+        android:gravity="center"
+        android:layout_marginTop="50dp"/>
 
 </android.support.constraint.ConstraintLayout>
