@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient2"
+    tools:context=".MyinfoActivity">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:text="이름:"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold"
+
+
+        />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/text1"
+        app:layout_constraintLeft_toRightOf="@id/text1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/MyName"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="학번:"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toLeftOf="@id/text1"
+        app:layout_constraintTop_toBottomOf="@id/text1"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/text2"
+        app:layout_constraintLeft_toRightOf="@id/text2"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/SchoolNumber"/>
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="닉네임:"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toLeftOf="@id/text2"
+        app:layout_constraintTop_toBottomOf="@id/text2"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/Nickname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/text3"
+        app:layout_constraintLeft_toRightOf="@id/text3"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/check_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Nickname"
+        android:text="check"
+        android:textSize="15dp"
+        android:background="@drawable/gradient"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/androiditalic"
+
+         />
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/unranked"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/check_btn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/image_view"
+        app:layout_constraintLeft_toRightOf="@+id/image_view"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/image_view"
+        android:text=""
+        android:textSize="35sp"
+        android:id="@+id/Final_check"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient"
+        android:text="NEXT"
+        android:fontFamily="@font/androiditalic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/next"/>
+
+
+</android.support.constraint.ConstraintLayout>

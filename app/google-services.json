@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "351681935329",
+    "firebase_url": "https://schoolgg-a5bf7.firebaseio.com",
+    "project_id": "schoolgg-a5bf7",
+    "storage_bucket": "schoolgg-a5bf7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:351681935329:android:fe6ac41045a0951f",
+        "android_client_info": {
+          "package_name": "com.example.sunrin.schoolgg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "351681935329-21ltkftvuv032f2vtvg854oq3u895gp5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sunrin.schoolgg",
+            "certificate_hash": "d1d501fe810ee64bbbb801c41a2ef5d99732aec2"
+          }
+        },
+        {
+          "client_id": "351681935329-j4vao1vhgtnu4kj2523fm8cro5jd1jh7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5P6uTJ21rFp7scVTi-3KZl9jcEi75RqE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "351681935329-j4vao1vhgtnu4kj2523fm8cro5jd1jh7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
